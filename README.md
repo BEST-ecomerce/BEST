@@ -67,3 +67,23 @@
 # 2nd level DFD
 
 ![2st level DFD](doc_img/SECOND.jpeg)
+
+
+# WHAT THE WEBSITE WILL DO:
+
+- This website is for buying foodstuffs of every variety , vegetables of every type, grains ,daily products  meat even tasty sea food  from the deep blue oceans and many more.
+
+- Apart from buying your daily needs , this website has more features to it. A customer can choose a specific diet to follow according to their needs. once the customer chooses their diet , we will deliver the raw materials and recipe for the meal.
+
+- To access these features , the customer first has to create an account.
+He or she then has to subscribe in order to purchase and access products and other features.
+
+# HARDWARE:
+
+```
+RAM: 8GB
+HDD: 250GB
+PROCESSOR: intel i5 vpro
+OS: linux
+```
+
