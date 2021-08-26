@@ -50,8 +50,9 @@ SEMEI KIBUMBA
 
 # Facilities required for proposed work:
 ```
-1.HTML
-2.CSS
-3.JAVASCRIPT
-Postgresql (back end)
+1. HTML
+2. CSS
+3. JAVASCRIPT
+4. Python (Django - backend)
+5. Postgresql (Database)
 ```
