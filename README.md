@@ -58,4 +58,4 @@
 
 # DATA FLOW DIAGRAM
 
-![alt text](doc_img/DFd.jpeg)
+![alt text](doc_img/DFD.jpeg)
