@@ -58,4 +58,12 @@
 
 # DATA FLOW DIAGRAM
 
-![alt text](doc_img/DFD.jpeg)
+![DFD](doc_img/DFD.jpeg)
+
+# 1st level DFD
+
+![1st level DFD](doc_img/FIRST.jpeg)
+
+# 2nd level DFD
+
+![2st level DFD](doc_img/SECOND.jpeg)
