@@ -7,12 +7,12 @@
 `DR.SUDESHNAR CHAKRABOTY`
 
 # Group Members
-```
-TAKONDWA ZIMULANGE
-BRAVE MADEYA
-EDWIN VISABWE
-SEMEI KIBUMBA
-```
+
+1. TAKONDWA ZIMULANGE
+2. BRAVE MADEYA
+3. EDWIN VISABWE
+4. SEMEI KIBUMBA
+5. Brain Kaamu
 
 # Abstract 
 
@@ -49,10 +49,9 @@ SEMEI KIBUMBA
 
 
 # Facilities required for proposed work:
-```
+
 1. HTML
 2. CSS
 3. JAVASCRIPT
 4. Python (Django - backend)
 5. Postgresql (Database)
-```
