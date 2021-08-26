@@ -8,10 +8,10 @@
 
 # Group Members
 
-1. TAKONDWA ZIMULANGE
-2. BRAVE MADEYA
-3. EDWIN VISABWE
-4. SEMEI KIBUMBA
+1. Takondwa Zimulange
+2. Brave Madeya
+3. Edwin Visabwe
+4. Semei Kibumba
 5. Brain Kaamu
 
 # Abstract 
