@@ -23,7 +23,7 @@ SEMEI KIBUMBA
 
 # Motivation:
 
--The motivation of the project has come from the rise of unbalanced diets and lack of information of what’s health to take in and what’s not.
+- The motivation of the project has come from the rise of unbalanced diets and lack of information of what’s health to take in and what’s not.
 
 - Hence the students will know what to take and what not to according to their preference.
 
