@@ -1,10 +1,10 @@
 {
-  "name": "BEST",
+  "name": "best",
   "version": "1.0.0",
   "description": "# SCHOOL OF ENGINEERING AND TECHNOLOGY",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:css": "tailwind build src/main.css. -o dist/main.css"
   },
   "repository": {
     "type": "git",
