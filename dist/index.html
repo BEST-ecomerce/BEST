@@ -4,26 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="css/main.css">
     <title>BEST</title>
 </head>
 <body class="bg-gray-100 text-gray-800">
-    <header>
-        <nav class="bg-gray-50 shadow-sm flex flex-row justify-between items-center px-24 py-6">
-            <div>
-                <h1 class="text-3xl font-bold text-green-500 hover:text-green-600 cursor-pointer transition-all">B.E.S.T</h1>
+    <header class="w-full">
+        <nav class="bg-gray-50 shadow-sm sm:shadow-md flex flex-row justify-between items-center w-full">
+            <!-- laptop view -->
+            <div class="hidden lg:flex justify-between items-center px-24 py-6 w-full">
+                <div>
+                    <h1 class="text-3xl font-bold text-green-500 hover:text-green-600 cursor-pointer transition-all">B.E.S.T</h1>
+                </div>
+                <ul  class="flex flex-row justify-center items-center">
+                    <li class="mx-6"><a href="" class="hover:text-gray-600 transition-all font-semibold">Home</a></li>
+                    <li class="mx-6"><a href="" class="hover:text-gray-600 transition-all font-semibold">Breakfast</a></li>
+                    <li class="mx-6"><a href="" class="hover:text-gray-600 transition-all font-semibold">Lunch</a></li>
+                    <li class="mx-6"><a href="" class="hover:text-gray-600 transition-all font-semibold">Supper</a></li>
+                    <li class="mx-6"><a href="" class="hover:text-gray-600 transition-all font-semibold">Diets</a></li>
+                </ul>
+                <div>
+                    <button class="text-gray-50 hover:text-gray-800 px-12 py-2 rounded-full font-bold  hover:border-green-500 border-2 border-transparent bg-green-500 hover:bg-transparent transition-all">Log In</button>
+                </div>
             </div>
-            <ul  class="flex flex-row justify-center items-center">
-                <li class="mx-6"><a href="" class="hover:text-gray-600 transition-all font-semibold">Home</a></li>
-                <li class="mx-6"><a href="" class="hover:text-gray-600 transition-all font-semibold">Breakfast</a></li>
-                <li class="mx-6"><a href="" class="hover:text-gray-600 transition-all font-semibold">Lunch</a></li>
-                <li class="mx-6"><a href="" class="hover:text-gray-600 transition-all font-semibold">Supper</a></li>
-                <li class="mx-6"><a href="" class="hover:text-gray-600 transition-all font-semibold">Diets</a></li>
-            </ul>
-            <div>
-                <button class="text-gray-50 hover:text-gray-800 px-12 py-2 rounded-full font-bold  hover:border-green-500 border-2 border-transparent bg-green-500 hover:bg-transparent transition-all">Log In</button>
+            <!-- Mobile view -->
+            <div class="flex flex-col justify-center items-start w-full py-2 lg:hidden">
+                <div class="flex flex-row w-full items-center justify-between px-8">
+                    <div class="">
+                        <h1 class="text-3xl font-bold text-green-500 hover:text-green-600 cursor-pointer transition-all">B.E.S.T</h1>
+                    </div>
+                    <div class="right text-3xl">
+                        <i class="fas fa-bars" id="bars"></i>
+                    </div>
+                </div>
+                
+                
+                <div class="hidden px-8 py-6 w-full" id="navbar" >
+                    <ul  class="flex flex-col justify-start items-start w-full">
+                        <li class="block py-2 w-full"><a href="" class="active block hover:text-gray-600 transition-all font-semibold w-full">Home</a></li>
+                        <li class="block py-2 w-full"><a href="" class="block hover:text-gray-600 transition-all font-semibold w-full">Breakfast</a></li>
+                        <li class="block py-2 w-full"><a href="" class="block hover:text-gray-600 transition-all font-semibold w-full">Lunch</a></li>
+                        <li class="block py-2 w-full"><a href="" class="block hover:text-gray-600 transition-all font-semibold w-full">Supper</a></li>
+                        <li class="block py-2 w-full"><a href="" class="block hover:text-gray-600 transition-all font-semibold w-full">Diets</a></li>
+                    </ul>
+                    <div class="flex pt-6">
+                        <button class="text-gray-50 hover:text-gray-800 px-12 py-2 rounded-full font-bold  hover:border-green-500 border-2 border-transparent bg-green-500 hover:bg-transparent transition-all w-full">Log In</button>
+                    </div>
+                </div>
+
             </div>
         </nav>
     </header>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            delay: 200,
+            duration: 1200,
+            once: false,
+        });
+    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
