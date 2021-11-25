@@ -11,19 +11,21 @@
     <title>BEST</title>
 </head>
 <body class="bg-gray-100 text-gray-800">
-    <nav class="bg-gray-50 shadow-sm sm:shadow-md flex flex-row justify-between items-center w-full">
+    <nav class="fixed top-0 bg-gray-50 shadow-sm sm:shadow-md flex flex-row justify-between items-center w-full">
         <!-- laptop view -->
         <div class="hidden lg:flex justify-between items-center px-24 py-2 w-full">
             <div>
                 <h1 class="text-3xl font-bold text-green-500 hover:text-green-600 cursor-pointer transition-all">B.E.S.T</h1>
             </div>
             <ul  class="flex flex-row justify-center items-center">
-                <li class="mx-6"><a href="" class="hover:text-gray-600 transition-all font-semibold">Home</a></li>
-                <li class="mx-6"><a href="" class="hover:text-gray-600 transition-all font-semibold">Breakfast</a></li>
-                <li class="mx-6"><a href="" class="hover:text-gray-600 transition-all font-semibold">Lunch</a></li>
-                <li class="mx-6"><a href="" class="hover:text-gray-600 transition-all font-semibold">Supper</a></li>
-                <li class="mx-6"><a href="" class="hover:text-gray-600 transition-all font-semibold">Diets</a></li>
+                <li class="mx-6"><a href="home.html" class="hover:text-gray-600 transition-all font-semibold active">Home</a></li>
+                <li class="mx-6"><a href="breakfast.html" class="hover:text-gray-600 transition-all font-semibold">Breakfast</a></li>
+                <li class="mx-6"><a href="lunch.html" class="hover:text-gray-600 transition-all font-semibold">Lunch</a></li>
+                <li class="mx-6"><a href="supper.html" class="hover:text-gray-600 transition-all font-semibold">Supper</a></li>
+                <li class="mx-6"><a href="diets.html" class="hover:text-gray-600 transition-all font-semibold">Diets</a></li>
             </ul>
+            <a href="cart.html" class="text-green-400"><i class="fas fa-shopping-cart"></i></a>
+
         </div>
         <!-- Mobile view -->
         <div class="flex flex-col justify-center items-start w-full py-2 lg:hidden">
@@ -39,18 +41,19 @@
             
             <div class="hidden px-8 py-6 w-full" id="navbar" >
                 <ul  class="flex flex-col justify-start items-start w-full">
-                    <li class="block py-2 w-full"><a href="" class="active block hover:text-gray-600 transition-all font-semibold w-full">Home</a></li>
-                    <li class="block py-2 w-full"><a href="" class="block hover:text-gray-600 transition-all font-semibold w-full">Breakfast</a></li>
-                    <li class="block py-2 w-full"><a href="" class="block hover:text-gray-600 transition-all font-semibold w-full">Lunch</a></li>
-                    <li class="block py-2 w-full"><a href="" class="block hover:text-gray-600 transition-all font-semibold w-full">Supper</a></li>
-                    <li class="block py-2 w-full"><a href="" class="block hover:text-gray-600 transition-all font-semibold w-full">Diets</a></li>
+                    <li class="block py-2 w-full"><a href="home.html" class="active block hover:text-gray-600 transition-all font-semibold w-full">Home</a></li>
+                    <li class="block py-2 w-full"><a href="breakfast.html" class="block hover:text-gray-600 transition-all font-semibold w-full">Breakfast</a></li>
+                    <li class="block py-2 w-full"><a href="lunch.html" class="block hover:text-gray-600 transition-all font-semibold w-full">Lunch</a></li>
+                    <li class="block py-2 w-full"><a href="lunch.html" class="block hover:text-gray-600 transition-all font-semibold w-full">Supper</a></li>
+                    <li class="block py-2 w-full"><a href="diets.html" class="block hover:text-gray-600 transition-all font-semibold w-full">Diets</a></li>
                 </ul>
+                <a href="" class="text-green-400"><i class="fas fa-shopping-cart"></i></a>
             </div>
 
         </div>
     </nav>
 
-    <main class="mx-12 my-8 space-y-16">
+    <main class="mx-12 my-24 space-y-16">
         <section class="grid grid-cols-1 lg:grid-cols-3 gap-y-10 gap-x-6 w-full">
             <div class="shadow-2xl rounded-md bg-gray-50  mx-4">
                 <div class="bg-cover bg-none bg-center h-60 rounded-t-md" style="background-image: url('img/pexels-trang-doan-974229.jpg');">
@@ -61,8 +64,7 @@
                     <h1 class="font-bold text-2xl">Keto Diet</h1>
                     <p class="font-medium text-gray-500">Involves a high fat, adequate-protein, low carbohydrate deit that allows the body to burn fat. Helps in weight loss, diabetes management and overal health.</p>
                     <div class="flex flex-col lg:flex-row lg:space-x-2 space-y-2 lg:space-y-0">
-                        <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 px-8">Subscribe</button>
-                        <a href="" class="rounded-md text-center font-medium border-2 border-green-400 text-gray-800 py-2 px-12">More</a>
+                        <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 w-full">Subscribe</button>
                     </div>
                 </div>
             </div>
@@ -75,8 +77,7 @@
                     <h1 class="font-bold text-2xl">Vegan Diet</h1>
                     <p class="font-medium text-gray-500"> No animal products or dairy products in this diet. Involves fruits ,vegetables, rice, legumes ,dairy altenatives and many more </p>
                     <div class="flex flex-col lg:flex-row lg:space-x-2 space-y-2 lg:space-y-0">
-                        <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 px-8">Subscribe</button>
-                        <a href="" class="rounded-md text-center font-medium border-2 border-green-400 text-gray-800 py-2 px-12">More</a>
+                        <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 w-full">Subscribe</button>
                     </div>
                 </div>
             </div>
@@ -89,8 +90,7 @@
                     <h1 class="font-bold text-2xl">Paleo Diet</h1>
                     <p class="font-medium text-gray-500">Includes lean meat, fish, fruits,vegetables, nuts and seeds. The aim is to return to a way of eating that's more like what early humans ate. </p>
                     <div class="flex flex-col lg:flex-row lg:space-x-2 space-y-2 lg:space-y-0">
-                        <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 px-8">Subscribe</button>
-                        <a href="" class="rounded-md text-center font-medium border-2 border-green-400 text-gray-800 py-2 px-12">More</a>
+                        <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 w-full">Subscribe</button>
                     </div>
                 </div>
             </div>
@@ -112,8 +112,7 @@
                             <li>Tea</li>
                         </ul>
                         <div class="flex flex-col lg:flex-row lg:space-x-2 space-y-2 lg:space-y-0">
-                            <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 px-6">Subscribe</button>
-                            <a href="" class="rounded-md text-center font-medium border-2 border-green-400 text-gray-800 py-2 px-10">More</a>
+                            <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 px-6 w-full">Subscribe</button>
                         </div>
                     </div>
                 </div>
@@ -129,8 +128,7 @@
                             <li>Tea</li>
                         </ul>
                         <div class="flex flex-col lg:flex-row lg:space-x-2 space-y-2 lg:space-y-0">
-                            <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 px-6">Subscribe</button>
-                            <a href="" class="rounded-md text-center font-medium border-2 border-green-400 text-gray-800 py-2 px-10">More</a>
+                            <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 px-6 w-full">Subscribe</button>
                         </div>
                     </div>
                 </div>
@@ -146,8 +144,7 @@
                             <li>Cocoa</li>
                         </ul>
                         <div class="flex flex-col lg:flex-row lg:space-x-2 space-y-2 lg:space-y-0">
-                            <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 px-6">Subscribe</button>
-                            <a href="" class="rounded-md text-center font-medium border-2 border-green-400 text-gray-800 py-2 px-10">More</a>
+                            <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 px-6 w-full">Subscribe</button>
                         </div>
                     </div>
                 </div>
@@ -163,8 +160,7 @@
                             <li>Peanut Butter</li>
                         </ul>
                         <div class="flex flex-col lg:flex-row lg:space-x-2 space-y-2 lg:space-y-0">
-                            <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 px-6">Subscribe</button>
-                            <a href="" class="rounded-md text-center font-medium border-2 border-green-400 text-gray-800 py-2 px-10">More</a>
+                            <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 px-6 w-full">Subscribe</button>
                         </div>
                     </div>
                 </div>
@@ -187,8 +183,7 @@
                             <li>Tea</li>
                         </ul>
                         <div class="flex flex-col lg:flex-row lg:space-x-2 space-y-2 lg:space-y-0">
-                            <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 px-6">Subscribe</button>
-                            <a href="" class="rounded-md text-center font-medium border-2 border-green-400 text-gray-800 py-2 px-10">More</a>
+                            <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 px-6 w-full">Subscribe</button>
                         </div>
                     </div>
                 </div>
@@ -204,8 +199,7 @@
                             <li>Tea</li>
                         </ul>
                         <div class="flex flex-col lg:flex-row lg:space-x-2 space-y-2 lg:space-y-0">
-                            <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 px-6">Subscribe</button>
-                            <a href="" class="rounded-md text-center font-medium border-2 border-green-400 text-gray-800 py-2 px-10">More</a>
+                            <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 px-6 w-full">Subscribe</button>
                         </div>
                     </div>
                 </div>
@@ -221,8 +215,7 @@
                             <li>Cocoa</li>
                         </ul>
                         <div class="flex flex-col lg:flex-row lg:space-x-2 space-y-2 lg:space-y-0">
-                            <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 px-6">Subscribe</button>
-                            <a href="" class="rounded-md text-center font-medium border-2 border-green-400 text-gray-800 py-2 px-10">More</a>
+                            <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 px-6 w-full">Subscribe</button>
                         </div>
                     </div>
                 </div>
@@ -238,8 +231,7 @@
                             <li>Peanut Butter</li>
                         </ul>
                         <div class="flex flex-col lg:flex-row lg:space-x-2 space-y-2 lg:space-y-0">
-                            <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 px-6">Subscribe</button>
-                            <a href="" class="rounded-md text-center font-medium border-2 border-green-400 text-gray-800 py-2 px-10">More</a>
+                            <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 px-6 w-full">Subscribe</button>
                         </div>
                     </div>
                 </div>
@@ -262,8 +254,7 @@
                             <li>Tea</li>
                         </ul>
                         <div class="flex flex-col lg:flex-row lg:space-x-2 space-y-2 lg:space-y-0">
-                            <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 px-6">Subscribe</button>
-                            <a href="" class="rounded-md text-center font-medium border-2 border-green-400 text-gray-800 py-2 px-10">More</a>
+                            <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 px-6 w-full">Subscribe</button>
                         </div>
                     </div>
                 </div>
@@ -279,8 +270,7 @@
                             <li>Tea</li>
                         </ul>
                         <div class="flex flex-col lg:flex-row lg:space-x-2 space-y-2 lg:space-y-0">
-                            <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 px-6">Subscribe</button>
-                            <a href="" class="rounded-md text-center font-medium border-2 border-green-400 text-gray-800 py-2 px-10">More</a>
+                            <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 px-6 w-full">Subscribe</button>
                         </div>
                     </div>
                 </div>
@@ -296,8 +286,7 @@
                             <li>Cocoa</li>
                         </ul>
                         <div class="flex flex-col lg:flex-row lg:space-x-2 space-y-2 lg:space-y-0">
-                            <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 px-6">Subscribe</button>
-                            <a href="" class="rounded-md text-center font-medium border-2 border-green-400 text-gray-800 py-2 px-10">More</a>
+                            <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 px-6 w-full">Subscribe</button>
                         </div>
                     </div>
                 </div>
@@ -313,8 +302,7 @@
                             <li>Peanut Butter</li>
                         </ul>
                         <div class="flex flex-col lg:flex-row lg:space-x-2 space-y-2 lg:space-y-0">
-                            <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 px-6">Subscribe</button>
-                            <a href="" class="rounded-md text-center font-medium border-2 border-green-400 text-gray-800 py-2 px-10">More</a>
+                            <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 px-6 w-full">Subscribe</button>
                         </div>
                     </div>
                 </div>
