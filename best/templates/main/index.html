@@ -1,3 +1,5 @@
+{% load static from static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,17 +9,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
     <title>BEST</title>
 </head>
 <body class="bg-gray-100 text-gray-800">
     <header class="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen">
         
-        <div class="flex flex-col  items-center absolute top-0 w-full h-full bg-center bg-cover" style="background-image: url('img/pexels-nathan-cowley-1153369.jpg');">
+        <div class="flex flex-col  items-center absolute top-0 w-full h-full bg-center bg-cover" style="background-image: url({% static 'img/pexels-nathan-cowley-1153369.jpg' %});">
             <span class="absolute w-full h-full opacity-75 bg-black"></span>
             <div class="lg:hidden relative mt-4 w-11/12 flex justify-between items-center">
                 <h1 class="text-3xl text-green-400 font-semibold">B.E.S.T</h1>
-                <a href="login.html" class=" text-white underline font-semibold">Log in</a>
+                <a href="{% url 'main:login' %}" class=" text-white underline font-semibold">Log in</a>
             </div>
             <div class="container relative  mx-auto w-full">
                 <div class="items-center flex flex-wrap w-full">
@@ -26,9 +28,9 @@
                             <h1 class="text-white font-semibold  lg:text-5xl text-4xl uppercase"><span class="text-green-400">B.E.S.T</span> online market</h1>
                             <p class="mt-4 text-lg text-gray-300"><span class="text-green-400 font-bold">BEST</span> is an online market where people can buy food</p>
                             <div class="flex lg:flex-row flex-col">
-                                <a href="signup.html" class="uppercase bg-green-400 text-gray-200 font-semibold py-4 px-20  inline-block mt-5 cursor-pointer rounded-md text-center">Get Started</a>
+                                <a href="{% url 'main:signup' %}" class="uppercase bg-green-400 text-gray-200 font-semibold py-4 px-20  inline-block mt-5 cursor-pointer rounded-md text-center">Get Started</a>
 
-                                <a href="login.html" class="hidden uppercase bg-transparent text-green-400 font-semibold py-4 px-20 ml-6  border-2 border-green-400 lg:inline-block mt-5 cursor-pointer rounded-md text-center">Log in</a>
+                                <a href="{% url 'main:login' %}" class="hidden uppercase bg-transparent text-green-400 font-semibold py-4 px-20 ml-6  border-2 border-green-400 lg:inline-block mt-5 cursor-pointer rounded-md text-center">Log in</a>
                             </div>
                         </div>
                     </div>
@@ -45,6 +47,6 @@
             once: false,
         });
     </script>
-    <script src="js/main.js"></script>
+    <script src="{% static 'js/main.js' %}"></script>
 </body>
 </html>

@@ -1,3 +1,5 @@
+{% load static from static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
     <title>BEST</title>
 </head>
 <body class="bg-gray-100 text-gray-800">
@@ -18,11 +20,11 @@
                 <h1 class="text-3xl font-bold text-green-500 hover:text-green-600 cursor-pointer transition-all">B.E.S.T</h1>
             </div>
             <ul  class="flex flex-row justify-center items-center">
-                <li class="mx-6"><a href="home.html" class="hover:text-gray-600 transition-all font-semibold">Home</a></li>
-                <li class="mx-6"><a href="breakfast.html" class="hover:text-gray-600 transition-all font-semibold">Breakfast</a></li>
-                <li class="mx-6"><a href="lunch.html" class="hover:text-gray-600 transition-all font-semibold">Lunch</a></li>
-                <li class="mx-6"><a href="supper.html" class="hover:text-gray-600 transition-all font-semibold">Supper</a></li>
-                <li class="mx-6"><a href="diets.html" class="active hover:text-gray-600 transition-all font-semibold">Diets</a></li>
+                <li class="mx-6"><a href="{% url 'main:home' %}" class="hover:text-gray-600 transition-all font-semibold {% block home %}{% endblock %}">Home</a></li>
+                <li class="mx-6"><a href="{% url 'main:breakfast' %}" class="hover:text-gray-600 transition-all font-semibold {% block breakfast %}{% endblock %}">Breakfast</a></li>
+                <li class="mx-6"><a href="{% url 'main:lunch' %}" class="hover:text-gray-600 transition-all font-semibold {% block lunch %}{% endblock %}">Lunch</a></li>
+                <li class="mx-6"><a href="{% url 'main:supper' %}" class="hover:text-gray-600 transition-all font-semibold {% block supper %}{% endblock %}">Supper</a></li>
+                <li class="mx-6"><a href="{% url 'main:diet' %}" class="hover:text-gray-600 transition-all font-semibold {% block diet %}{% endblock %}">Diets</a></li>
             </ul>
             <a href="cart.html" class="text-green-400"><i class="fas fa-shopping-cart"></i></a>
 
@@ -41,39 +43,21 @@
             
             <div class="hidden px-8 py-6 w-full" id="navbar" >
                 <ul  class="flex flex-col justify-start items-start w-full">
-                    <li class="block py-2 w-full"><a href="home.html" class="block hover:text-gray-600 transition-all font-semibold w-full">Home</a></li>
+                    <li class="block py-2 w-full"><a href="home.html" class="active block hover:text-gray-600 transition-all font-semibold w-full">Home</a></li>
                     <li class="block py-2 w-full"><a href="breakfast.html" class="block hover:text-gray-600 transition-all font-semibold w-full">Breakfast</a></li>
                     <li class="block py-2 w-full"><a href="lunch.html" class="block hover:text-gray-600 transition-all font-semibold w-full">Lunch</a></li>
                     <li class="block py-2 w-full"><a href="lunch.html" class="block hover:text-gray-600 transition-all font-semibold w-full">Supper</a></li>
-                    <li class="block py-2 w-full"><a href="diets.html" class="active block hover:text-gray-600 transition-all font-semibold w-full">Diets</a></li>
+                    <li class="block py-2 w-full"><a href="diets.html" class="block hover:text-gray-600 transition-all font-semibold w-full">Diets</a></li>
                 </ul>
-                <a href="" class="text-green-400"><i class="fas fa-shopping-cart"></i></a>
+                <!-- <a href="" class="text-green-400"><i class="fas fa-shopping-cart"></i></a> -->
             </div>
 
         </div>
     </nav>
-
-    <main class="mx-12 my-24 space-y-16">
-        <di class="flex flex-col">
-            <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-                <div class="py-2 align-baseline inline-block min-w-full sm:px-6 lg:px-8">
-                    <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
-                        <table class="min-w-full divide-y divide-gray-200">
-                            <thead class="bg-gray-50">
-                                <tr>
-                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gra"></th>
-                                </tr>
-                            </thead>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </di>
-    </main>    
-
-    <!-- footer section  -->
-
-    <footer class="h-4/6 bg-gray-300 flex flex-col justify-between items-center w-full space-y-12 lg:space-x-0 pt-12 pb-6">
+       <!-- footer section  -->
+       {% block content %}
+       {% endblock %} 
+       <footer class="h-4/6 bg-gray-300 flex flex-col justify-between items-center w-full space-y-12 lg:space-x-0 pt-12 pb-6">
         <div class="grid grid-cols-2 lg:grid-cols-4 mx-12 gap-x-10 gap-y-8 text-lg text-gray-500">
             <div class="space-y-4">
                 <h1 class="text-2xl font-medium">B.E.S.T</h1>
@@ -125,6 +109,6 @@
             once: false,
         });
     </script>
-    <script src="js/main.js"></script>
+    <script src="{% static 'js/main.js' %} "></script>
 </body>
 </html>

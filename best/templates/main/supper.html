@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load static from static %}
+
+{% block supper %}active{% endblock %}
+
+{% block content %}
+
+
+    <main class="mx-12 my-24 space-y-16">
+        <section class="grid grid-cols-1 lg:grid-cols-4 gap-y-10 gap-x-6 w-full">
+            <div class="shadow-2xl rounded-md bg-gray-50">
+                <div class="bg-cover bg-none bg-center h-60 rounded-t-md" style="background-image: url({% static 'img/pataato.jpg' %});">
+
+                </div>
+
+                <div class="py-8 px-8 space-y-4">
+                    <h1 class="font-bold text-2xl">Malawian Pack</h1>
+                    <p class="font-medium text-gray-500">Involves a high fat, adequate-protein, low carbohydrate deit that allows the body to burn fat. Helps in weight loss, diabetes management and overal health.</p>
+                    <div class="flex flex-col lg:flex-row lg:space-x-2 space-y-2 lg:space-y-0">
+                        <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 w-full">Subscribe</button>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="shadow-2xl rounded-md bg-gray-50">
+                <div class="bg-cover bg-none bg-center h-60 rounded-t-md" style="background-image: url({% static 'img/maize.jpg' %});">
+
+                </div>
+
+                <div class="py-8 px-8 space-y-4">
+                    <h1 class="font-bold text-2xl">Ugandan Pack</h1>
+                    <p class="font-medium text-gray-500"> No animal products or dairy products in this diet. Involves fruits ,vegetables, rice, legumes ,dairy altenatives and many more </p>
+                    <div class="flex flex-col lg:flex-row lg:space-x-2 space-y-2 lg:space-y-0">
+                        <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 w-full">Subscribe</button>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="shadow-2xl rounded-md bg-gray-50">
+                <div class="bg-cover bg-none bg-center h-60 rounded-t-md" style="background-image: url({% static 'img/bread.jpg' %});">
+
+                </div>
+
+                <div class="py-8 px-8 space-y-4">
+                    <h1 class="font-bold text-2xl">Grand Pack</h1>
+                    <p class="font-medium text-gray-500">Includes lean meat, fish, fruits,vegetables, nuts and seeds. The aim is to return to a way of eating that's more like what early humans ate. </p>
+                    <div class="flex flex-col lg:flex-row lg:space-x-2 space-y-2 lg:space-y-0">
+                        <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 w-full">Subscribe</button>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="shadow-2xl rounded-md bg-gray-50">
+                <div class="bg-cover bg-none bg-center h-60 rounded-t-md" style="background-image: url({% static 'img/porridge.jpg' %});">
+
+                </div>
+
+                <div class="py-8 px-8 space-y-4">
+                    <h1 class="font-bold text-2xl">Edos Pack</h1>
+                    <p class="font-medium text-gray-500">Includes lean meat, fish, fruits,vegetables, nuts and seeds. The aim is to return to a way of eating that's more like what early humans ate. </p>
+                    <div class="flex flex-col lg:flex-row lg:space-x-2 space-y-2 lg:space-y-0">
+                        <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 w-full">Subscribe</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Breakfast Section -->
+        
+        <section class="flex flex-col items-center justify-center">
+            <h1 class="font-semibold text-4xl lg:text-6xl"></h1>
+            <div class="mt-6 grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-y-10 gap-x-6 w-full">
+                <div class="">
+                    <div class="bg-cover bg-none bg-center  h-60 rounded-t-md" style="background-image: url({% static 'img/pataato.jpg' %});">
+
+                    </div>
+                    <div class="shadow-2xl rounded-md bg-gray-50 px-8 py-8 space-y-6">
+                        <h1 class="text-2xl font-medium text-center">Mango Juice</h1>
+                        <div class="flex flex-col lg:flex-row lg:space-x-2 space-y-2 lg:space-y-0">
+                            <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 w-full capitalize"><i class="fas fa-plus"></i> add cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="bg-cover bg-none bg-center  h-60 rounded-t-md" style="background-image: url({% static 'img/maize.jpg' %});">
+
+                    </div>
+                    <div class="shadow-2xl rounded-md bg-gray-50 px-8 py-8 space-y-6">
+                        <h1 class="text-2xl font-medium text-center">Potatoes</h1>
+                        <div class="flex flex-col lg:flex-row lg:space-x-2 space-y-2 lg:space-y-0">
+                            <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 w-full capitalize"><i class="fas fa-plus"></i> add cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="bg-cover bg-none bg-center  h-60 rounded-t-md" style="background-image: url({% static 'img/bread.jpg' %});">
+
+                    </div>
+                    <div class="shadow-2xl rounded-md bg-gray-50 px-8 py-8 space-y-6">
+                        <h1 class="text-2xl font-medium text-center">Milk</h1>
+                        <div class="flex flex-col lg:flex-row lg:space-x-2 space-y-2 lg:space-y-0">
+                            <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 w-full capitalize"><i class="fas fa-plus"></i> add cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="bg-cover bg-none bg-center  h-60 rounded-t-md" style="background-image: url({% static 'img/porridge.jpg' %});">
+
+                    </div>
+                    <div class="shadow-2xl rounded-md bg-gray-50 px-8 py-8 space-y-6">
+                        <h1 class="text-2xl font-medium text-center">Cheese</h1>
+                        <div class="flex flex-col lg:flex-row lg:space-x-2 space-y-2 lg:space-y-0">
+                            <button class="rounded-md font-medium bg-green-400 text-gray-50 py-2 w-full capitalize"><i class="fas fa-plus"></i> add cart</button> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    {% endblock %}
