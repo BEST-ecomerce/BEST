@@ -3,3 +3,7 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.active{
+    @apply text-green-500 underline;
+}

@@ -1,0 +1,114 @@
+{% load static from static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>BEST</title>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <nav class="fixed top-0 bg-gray-50 shadow-sm sm:shadow-md flex flex-row justify-between items-center w-full">
+        <!-- laptop view -->
+        <div class="hidden lg:flex justify-between items-center px-24 py-2 w-full">
+            <div>
+                <h1 class="text-3xl font-bold text-green-500 hover:text-green-600 cursor-pointer transition-all">B.E.S.T</h1>
+            </div>
+            <ul  class="flex flex-row justify-center items-center">
+                <li class="mx-6"><a href="{% url 'main:home' %}" class="hover:text-gray-600 transition-all font-semibold {% block home %}{% endblock %}">Home</a></li>
+                <li class="mx-6"><a href="{% url 'main:breakfast' %}" class="hover:text-gray-600 transition-all font-semibold {% block breakfast %}{% endblock %}">Breakfast</a></li>
+                <li class="mx-6"><a href="{% url 'main:lunch' %}" class="hover:text-gray-600 transition-all font-semibold {% block lunch %}{% endblock %}">Lunch</a></li>
+                <li class="mx-6"><a href="{% url 'main:supper' %}" class="hover:text-gray-600 transition-all font-semibold {% block supper %}{% endblock %}">Supper</a></li>
+                <li class="mx-6"><a href="{% url 'main:diet' %}" class="hover:text-gray-600 transition-all font-semibold {% block diet %}{% endblock %}">Diets</a></li>
+            </ul>
+            <a href="cart.html" class="text-green-400"><i class="fas fa-shopping-cart"></i></a>
+
+        </div>
+        <!-- Mobile view -->
+        <div class="flex flex-col justify-center items-start w-full py-2 lg:hidden">
+            <div class="flex flex-row w-full items-center justify-between px-8">
+                <div class="">
+                    <h1 class="text-3xl font-bold text-green-500 hover:text-green-600 cursor-pointer transition-all">B.E.S.T</h1>
+                </div>
+                <div class="right text-3xl">
+                    <i class="fas fa-bars" id="bars"></i>
+                </div>
+            </div>
+            
+            
+            <div class="hidden px-8 py-6 w-full" id="navbar" >
+                <ul  class="flex flex-col justify-start items-start w-full">
+                    <li class="block py-2 w-full"><a href="home.html" class="active block hover:text-gray-600 transition-all font-semibold w-full">Home</a></li>
+                    <li class="block py-2 w-full"><a href="breakfast.html" class="block hover:text-gray-600 transition-all font-semibold w-full">Breakfast</a></li>
+                    <li class="block py-2 w-full"><a href="lunch.html" class="block hover:text-gray-600 transition-all font-semibold w-full">Lunch</a></li>
+                    <li class="block py-2 w-full"><a href="lunch.html" class="block hover:text-gray-600 transition-all font-semibold w-full">Supper</a></li>
+                    <li class="block py-2 w-full"><a href="diets.html" class="block hover:text-gray-600 transition-all font-semibold w-full">Diets</a></li>
+                </ul>
+                <!-- <a href="" class="text-green-400"><i class="fas fa-shopping-cart"></i></a> -->
+            </div>
+
+        </div>
+    </nav>
+       <!-- footer section  -->
+       {% block content %}
+       {% endblock %} 
+       <footer class="h-4/6 bg-gray-300 flex flex-col justify-between items-center w-full space-y-12 lg:space-x-0 pt-12 pb-6">
+        <div class="grid grid-cols-2 lg:grid-cols-4 mx-12 gap-x-10 gap-y-8 text-lg text-gray-500">
+            <div class="space-y-4">
+                <h1 class="text-2xl font-medium">B.E.S.T</h1>
+                <p>The best online market where you can buy raw materials for preparing your mael.</p>
+                <div class="space-x-2">
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <h3 class="text-xl font-medium">Navigate</h3>
+                <ul class="space-y-2">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Breakfast</a></li>
+                    <li><a href="">Lunch</a></li>
+                    <li><a href="">Supper</a></li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <h3 class="text-xl font-medium">Vist Us</h3>
+                <ul class="space-y-2">
+                    <li><a href=""><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href=""><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href=""><i class="fab fa-github"></i> GitHub</a></li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <h3 class="text-xl font-medium">Legal</h3>
+                <ul class="space-y-2">
+                    <li><a href="">Claim</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mb-6 text-lg text-gray-500 font-light">
+            <p>@ 2021 <span class="font-medium">B.E.S.T</span>, inc. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            delay: 200,
+            duration: 1200,
+            once: false,
+        });
+    </script>
+    <script src="{% static 'js/main.js' %} "></script>
+</body>
+</html>

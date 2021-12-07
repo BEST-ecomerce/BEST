@@ -2,3 +2,5 @@ node_modules/*
 package-lock.json
 tailwind.config.js
 namer
+best/best/__pycache__
+best/main/migrations
