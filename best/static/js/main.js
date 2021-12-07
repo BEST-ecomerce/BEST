@@ -14,4 +14,3 @@ bars.addEventListener('click', ()=>{
         bars.classList.add('fa-bars')
     }
 });
-

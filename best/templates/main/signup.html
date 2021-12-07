@@ -15,32 +15,28 @@
     <!-- Forms -->
     <section class="flex flex-col justify-center items-center my-16">
         <h1 class="text-2xl font-semibold"><span class="text-green-400 font-bold">BEST</span> Online Market</h1>
-        <form action="{% url 'main:home' %}" method="post" class="flex flex-col shadow-2xl mt-6 rounded-md p-12 bg-white w-11/12 lg:w-9/12">
+        <form action="" method="POST" class="flex flex-col shadow-2xl mt-6 rounded-md p-12 bg-white w-11/12 lg:w-9/12">
             {% csrf_token %}
             <h1 class="text-center text-2xl font-semibold">Sign Up</h1>
-            <div class="lg:flex lg:flex-row w-full lg:mr-12">
-                <div class="flex flex-col mt-10 w-full">
-                    <label for="text" class="font-semibold">First Name</label>
-                    <input type="text" name="text" id="text" placeholder="Your First Name" class="border border-gray-300 py-2 px-4 rounded-md outline-white focus:border-green-400">
-                </div>
-                <div class="flex flex-col lg:mt-10 mt-5 w-full lg:ml-12">
-                    <label for="text" class="font-semibold">Last Name</label>
-                    <input type="text" name="text" id="text" placeholder="Your Last Name" class="border border-gray-300 py-2 px-4 rounded-md outline-white focus:border-green-400">
-                </div>
+            <div class="flex flex-col mt-5">
+                <label for="email" class="font-semibold">{{form.username.label}}</label>
+                {{form.username}}
             </div>
             <div class="flex flex-col mt-5">
-                <label for="email" class="font-semibold">Email</label>
-                <input type="email" name="email" id="email" placeholder="Your Email" class="border border-gray-300 py-2 px-4 rounded-md outline-white focus:border-green-400">
+                <label for="email" class="font-semibold">{{form.email.label}}</label>
+                {{form.email}}
             </div>
             <div class="flex flex-col mt-5">
-                <label for="password" class="font-semibold">Password</label>
-                <input type="password" name="password" id="password" placeholder="Your Password" class="border border-gray-300 py-2 px-4 rounded-md outline-white focus:border-green-400">
+                <label for="password" class="font-semibold">{{form.password1.label}}</label>
+                {{form.password1}}
             </div>
             <div class="flex flex-col mt-5">
-                <label for="password" class="font-semibold">Confirm Password</label>
-                <input type="password" name="password" id="password" placeholder="Confirm Your Password" class="border border-gray-300 py-2 px-4 rounded-md outline-white focus:border-green-400">
+                <label for="password" class="font-semibold">{{form.password2.label}}</label>
+                {{form.password2}}
+            
             </div>
-            <button class="uppercase bg-transparent bg-green-400  hover:bg-transparent text-gray-200 font-semibold hover:text-green-400 py-2 px-20  border-2 hover:border-green-400 inline-block mt-5 rounded-md">Sign Up</button>
+            <input type="submit" name="Create User" id="" class="uppercase bg-transparent bg-green-400  hover:bg-transparent text-gray-200 font-semibold hover:text-green-400 py-2 px-20  border-2 hover:border-green-400 inline-block mt-5 rounded-md">
+            {{form.errors}}
             <p class="text-gray-400 mt-3">Already have an account? <a href="{% url 'main:login' %}" class="text-gray-500 underline">Log in</a></p>
         </form>
     </section>
